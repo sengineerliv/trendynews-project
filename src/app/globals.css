@@ -1,0 +1,89 @@
+/*General*/
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(var(--color-primary-rgb), 1);
+  font-family: var(--font-primary);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: var(--color-links);
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-links-hover);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+#main {
+  margin-top: 80px;
+}
+
+/*Sections/Header*/
+section {
+  padding: 40px 0;
+  overflow: hidden;
+  scroll-margin-top: 70px;
+}
+
+.section-header {
+  border-bottom: 2px solid var(--color-black);
+}
+
+.section-header h2 {
+  font-size: 50px;
+  color: var(--color-black);
+}
+
+.section-header p {
+  margin-bottom: 0;
+}
+
+/*Page*/
+.page-title {
+  font-size: 60px;
+  color: var(--color-black);
+}
+
+/*Form Input*/
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--color-black);
+}
+
+/*Buttons*/
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn.btn-primary {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}

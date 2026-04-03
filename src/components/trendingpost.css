@@ -1,0 +1,56 @@
+.trending {
+    border: 1px solid rgba(var(--bs-gray-300), 0.4);
+}
+
+.trending > h3 {
+    color: var(--bs-gray-300);
+    padding: 20px;
+    border-bottom: 1px solid rgba(var(--bs-gray-300), 0.4);
+}
+
+.trending .trending-post {
+    padding: 0;
+    margin: 0
+}
+
+.trending .trending-post li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+}
+
+.trending .trending-post li a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid rgba(var(--bs-gray-300), 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.trending .trending-post li a .number {
+    position: absolute;
+    z-index: -1;
+    font-size: 4rem;
+    left: -10px;
+    top: -20px;
+    font-weight: 700;
+    color: rgba(var(--bs-gray-300), 0.1);
+}
+
+.trending .trending-post li a h3 {
+    font-size: 18px;
+    color: rgba(var(--bs-gray-300), 1);
+}
+
+.trending .trending-post li a .author {
+    color: rgba(var(--bs-gray-500), 1);
+}
+
+.trending .trending-post li a:hover h3 {
+    color: rgba(var(--bs-gray-700), 1);
+}
+
+.trending .trending-post li:last-child a {
+    border-bottom: none;
+}
